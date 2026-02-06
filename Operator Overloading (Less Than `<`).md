@@ -25,7 +25,27 @@ To write a Python program that demonstrates **operator overloading** by overload
 ---
 
 ## 💻 Program
+```
+class Marks(object):
+    # Define a constructor
+    def __init__(self, x):
+        self.x = x
+
+    # Use the magic function for < operator overloading
+    def __lt__(self, other):
+        return self.x < other.x
+
+# Driver code
+obj1 = Marks(20)
+obj2 = Marks(10)
+
+print(obj1 < obj2)
+```
 
 ## Output
 
+<img width="598" height="286" alt="image" src="https://github.com/user-attachments/assets/4abc6f04-c673-454c-bae9-10bda1fde275" />
+
+
 ## Result
+Thus , a Python program that demonstrates **operator overloading** by overloading the **less than (`<`)** operator using a custom class.
